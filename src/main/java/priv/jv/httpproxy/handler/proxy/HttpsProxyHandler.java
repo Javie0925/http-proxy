@@ -77,7 +77,7 @@ public class HttpsProxyHandler extends ChannelInboundHandlerAdapter implements I
                 future.channel().writeAndFlush(msg);
                 logger.debug("[HttpsProxyHandler][sendToServer]目标连接创建成功，并已转发了数据包");
             } else {
-                logger.error("[HttpsProxyHandler][sendToServer]连接远程server失败");
+                logger.error("[HttpsProxyHandler][sendToServer]连接远程server: [{}{}]失败",clientRequest.getHost(), clientRequest.getPort());
             }
         });
     }
