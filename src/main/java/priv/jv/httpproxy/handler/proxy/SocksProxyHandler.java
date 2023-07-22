@@ -25,6 +25,9 @@ public class SocksProxyHandler extends ChannelInboundHandlerAdapter implements I
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         logger.debug("[SocksProxyHandler]");
+        if (msg instanceof HttpRequest) {
+            return;
+        }
         Attribute<ClientRequest> clientRequestAttribute = ctx.channel().attr(CLIENTREQUEST_ATTRIBUTE_KEY);
         ClientRequest clientRequest = clientRequestAttribute.get();
         sendToServer(clientRequest, ctx, msg);
