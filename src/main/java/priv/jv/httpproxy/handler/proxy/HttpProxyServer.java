@@ -9,8 +9,12 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.http.HttpRequest;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import priv.jv.httpproxy.EasyHttpProxyServer;
 
 /**
  * HTTP/HTTPS代理服务器
@@ -23,6 +27,7 @@ import io.netty.handler.logging.LoggingHandler;
  * <<-------- 代理客户端  <<--------
  */
 public class HttpProxyServer {
+    private static Logger logger = LoggerFactory.getLogger(HttpProxyServer.class);
     int port;
 
     public HttpProxyServer(int port) {
@@ -30,7 +35,13 @@ public class HttpProxyServer {
     }
 
     public static void main(String[] args) throws Exception {
-        new HttpProxyServer(8888).run();
+        logger.info("start proxy server");
+        int port = 8888;
+        if (args.length > 0) {
+            port = Integer.valueOf(args[0]);
+        }
+        new HttpProxyServer(port).run();
+        logger.info("proxy server start on {} port", port);
     }
 
     public void run() {
@@ -45,8 +56,9 @@ public class HttpProxyServer {
                         @Override
                         public void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(
-                                    new LoggingHandler(LogLevel.DEBUG),
-                                    new HttpProxyClientHandler());
+                                    new LoggingHandler(LogLevel.INFO),
+                                    new HttpProxyClientHandler(),
+                                    new SocksProxyHandler());
                         }
                     })
                     .bind(port).sync().channel().closeFuture().sync();
@@ -83,6 +95,9 @@ public class HttpProxyServer {
          */
         @Override
         public void channelRead(ChannelHandlerContext ctx, Object msg) {
+            if (!(msg instanceof HttpRequest)) {
+                return;
+            }
             if (header.isComplete()) {
                 /*如果在真实客户端的本次请求中已经解析过header了，
                 说明代理客户端已经在目标主机建立了连接，直接将真实客户端的数据写给目标主机*/
@@ -156,7 +171,7 @@ public class HttpProxyServer {
      * 代理客户端请求目标主机处理器
      */
     private static class HttpProxyRemoteHandler extends ChannelInboundHandlerAdapter {
-
+        private static Logger logger = LoggerFactory.getLogger(HttpProxyRemoteHandler.class);
         private Channel clientChannel;
         private Channel remoteChannel;
 
@@ -197,6 +212,8 @@ public class HttpProxyServer {
      * 真实主机的请求头信息
      */
     private static class HttpProxyClientHeader {
+        private static Logger logger = LoggerFactory.getLogger(HttpProxyRemoteHandler.class);
+
         private String method;//请求类型
         private String host;//目标主机
         private int port;//目标主机端口
@@ -284,8 +301,7 @@ public class HttpProxyServer {
                     break;
                 }
             }
-            System.out.println(this);
-            System.out.println("--------------------------------------------------------------------------------");
+            logger.debug(toString());
         }
 
         private String readLine(ByteBuf in) {
