@@ -106,7 +106,7 @@ public class HttpProxyHandler extends ChannelInboundHandlerAdapter implements IP
                     logger.debug("[operationComplete] connect remote server success!");
                 } else {
                     //连接失败
-                    logger.error("[operationComplete] 连接远程server失败了");
+                    logger.error("[operationComplete] 连接远程server: [{}{}]失败了",clientRequest.getHost(), clientRequest.getPort());
                     ctx.channel().close();
                 }
             }
