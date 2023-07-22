@@ -10,6 +10,7 @@
 
     <groupId>priv.jv.http-proxy</groupId>
     <artifactId>http-proxy</artifactId>
+    <version>1.0.0</version>
     <modelVersion>4.0.0</modelVersion>
 
 
