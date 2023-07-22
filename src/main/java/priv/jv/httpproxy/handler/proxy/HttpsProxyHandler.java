@@ -102,7 +102,7 @@ public class HttpsProxyHandler extends ChannelInboundHandlerAdapter implements I
             clientRequest.setHttps(true);
             clientRequestAttribute.set(clientRequest);
         } catch (Exception e) {
-            logger.error("[sendToServer] err:{}", e.toString());
+            logger.error("[sendToServer error]", e);
         }
     }
 }
