@@ -75,10 +75,12 @@ public class EasyHttpProxyServer {
             logger.info("[EasyHttpProxyServer] proxy server start on {} port", listenPort);
             ChannelFuture f = b
                     .bind(listenPort)
+                    .sync()
+                    .channel()
+                    .closeFuture()
                     .sync();
-            f.channel().closeFuture().sync();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("exception occurs while during starting.",e);
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
