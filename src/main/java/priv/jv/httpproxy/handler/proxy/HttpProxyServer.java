@@ -96,7 +96,7 @@ public class HttpProxyServer {
         @Override
         public void channelRead(ChannelHandlerContext ctx, Object msg) {
             if (!(msg instanceof HttpRequest)) {
-                return;
+                super.channelRead(ctx, msg);
             }
             if (header.isComplete()) {
                 /*如果在真实客户端的本次请求中已经解析过header了，
