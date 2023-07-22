@@ -2,6 +2,7 @@ package priv.jv.httpproxy.handler.proxy;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
+import io.netty.handler.codec.http.HttpRequest;
 import io.netty.util.Attribute;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
