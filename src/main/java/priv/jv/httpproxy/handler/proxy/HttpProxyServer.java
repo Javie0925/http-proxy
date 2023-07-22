@@ -94,7 +94,7 @@ public class HttpProxyServer {
          * 这是TCP底层决定的（拆包/粘包）
          */
         @Override
-        public void channelRead(ChannelHandlerContext ctx, Object msg) {
+        public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
             if (!(msg instanceof HttpRequest)) {
                 super.channelRead(ctx, msg);
             }
