@@ -1,4 +1,4 @@
-package priv.jv.httpproxy.proxy.handler.bean;
+package priv.jv.proxy.handler.bean;
 
 import java.io.Serializable;
 

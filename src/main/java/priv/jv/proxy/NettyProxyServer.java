@@ -1,4 +1,4 @@
-package priv.jv.httpproxy;
+package priv.jv.proxy;
 
 
 import io.netty.bootstrap.ServerBootstrap;
@@ -11,8 +11,8 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.util.NettyRuntime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import priv.jv.httpproxy.proxy.handler.HttpProxyClientHandler;
-import priv.jv.httpproxy.proxy.handler.SocksProxyHandler;
+import priv.jv.proxy.handler.http.HttpProxyClientHandler;
+import priv.jv.proxy.handler.socks.SocksServerInitializer;
 
 import java.text.MessageFormat;
 
@@ -27,47 +27,45 @@ import java.text.MessageFormat;
  * 真实客户端                                  目标主机
  * <<-------- 代理客户端  <<--------
  */
-public class EasyHttpProxyServer {
-    private static Logger logger = LoggerFactory.getLogger(EasyHttpProxyServer.class);
+public class NettyProxyServer {
+    private static Logger logger = LoggerFactory.getLogger(NettyProxyServer.class);
 
     int port;
 
-    public EasyHttpProxyServer(int port) {
+    public NettyProxyServer(int port) {
         this.port = port;
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         printWelcome();
         int port = 8888;
         if (args.length > 0) {
             port = Integer.valueOf(args[0]);
         }
-        new EasyHttpProxyServer(port).run();
+        new NettyProxyServer(port).run();
         logger.info("proxy server start on {} port", port);
     }
 
     private static void printWelcome() {
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>> starting proxy server <<<<<<<<<<<<<<<<<<<<<<");
         System.out.println(MessageFormat.format(">>>>>>>>>>>>>>>>>>>>>>>>>> available process: {0} <<<<<<<<<<<<<<<<<<<<<<",
-                Constans.AVAILABLE_PROCESS));
+                Constants.AVAILABLE_PROCESS));
         System.out.println();
     }
 
     public void run() {
-        EventLoopGroup bossGroup = new NioEventLoopGroup(Constans.AVAILABLE_PROCESS);
+        EventLoopGroup bossGroup = new NioEventLoopGroup(Constants.AVAILABLE_PROCESS);
         EventLoopGroup workerGroup = new NioEventLoopGroup(NettyRuntime.availableProcessors() * 5);
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
-                    .handler(new LoggingHandler(LogLevel.INFO))
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
-                        public void initChannel(SocketChannel ch) throws Exception {
+                        public void initChannel(SocketChannel ch) {
                             ch.pipeline().addLast(
-                                    new LoggingHandler(LogLevel.WARN),
                                     new HttpProxyClientHandler(),
-                                    new SocksProxyHandler());
+                                    new SocksServerInitializer());
                         }
                     })
                     .bind(port)
@@ -75,7 +73,7 @@ public class EasyHttpProxyServer {
                     .channel()
                     .closeFuture()
                     .sync();
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             bossGroup.shutdownGracefully();

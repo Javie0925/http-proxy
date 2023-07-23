@@ -1,13 +1,13 @@
-package priv.jv.httpproxy.proxy.handler;
+package priv.jv.proxy.handler.http;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
-import io.netty.handler.codec.http.HttpRequest;
+import io.netty.handler.codec.socksx.SocksVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import priv.jv.httpproxy.proxy.handler.bean.HttpProxyClientHeader;
+import priv.jv.proxy.handler.bean.HttpProxyClientHeader;
 
 /**
  * 代理客户端去请求目标主机
@@ -33,9 +33,21 @@ public class HttpProxyClientHandler extends ChannelInboundHandlerAdapter {
      */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        if (!(msg instanceof HttpRequest)) {
-            super.channelRead(ctx, msg);
+        ByteBuf in = (ByteBuf) msg;
+        int readerIndex = in.readerIndex();
+        // skip socks request
+        if (in.writerIndex() != readerIndex) {
+            ChannelPipeline p = ctx.pipeline();
+            byte versionVal = in.getByte(readerIndex);
+            SocksVersion version = SocksVersion.valueOf(versionVal);
+            if (SocksVersion.SOCKS4a.byteValue() == version.byteValue()
+                    || SocksVersion.SOCKS5.byteValue() == version.byteValue()) {
+                super.channelRead(ctx, msg);
+                p.remove(this);
+                return;
+            }
         }
+
         if (header.isComplete()) {
             /*
             如果在真实客户端的本次请求中已经解析过header了，
@@ -45,7 +57,6 @@ public class HttpProxyClientHandler extends ChannelInboundHandlerAdapter {
             return;
         }
 
-        ByteBuf in = (ByteBuf) msg;
         header.digest(in);/*解析目标主机信息*/
 
 

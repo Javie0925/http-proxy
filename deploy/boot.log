@@ -1,0 +1,2715 @@
+18:26:25,637 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:26:25,637 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+18:26:25,637 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/root/Workstation/projects/http-proxy/deploy/config/logback.xml]
+18:26:25,639 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+18:26:25,639 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/root/Workstation/projects/http-proxy/deploy/config/logback.xml]
+18:26:25,639 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/Workstation/projects/http-proxy/deploy/lib/http-proxy-1.0.0.jar!/logback.xml]
+18:26:25,733 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+18:26:25,741 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:26:25,745 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [consoleAppender]
+18:26:25,833 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+18:26:25,838 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [toLogFile]
+18:26:25,864 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@627185331 - No compression will be used
+18:26:25,868 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@627185331 - Will use the pattern logs/server.log.%d{yyyy-MM-dd}.%i for the active file
+18:26:25,873 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2a18f23c - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/server.log.%d{yyyy-MM-dd}.%i'.
+18:26:25,873 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2a18f23c - Roll-over at midnight.
+18:26:25,877 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2a18f23c - Setting initial period to Sun Jul 23 18:26:25 UTC 2023
+18:26:25,877 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2a18f23c - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+18:26:25,877 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2a18f23c - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+18:26:25,883 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[toLogFile] - Active log file name: logs/server.log
+18:26:25,883 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[toLogFile] - File property is set to [logs/server.log]
+18:26:25,884 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+18:26:25,886 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [toLogFileAsync]
+18:26:25,887 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [toLogFile] to ch.qos.logback.classic.AsyncAppender[toLogFileAsync]
+18:26:25,887 |-INFO in ch.qos.logback.classic.AsyncAppender[toLogFileAsync] - Attaching appender named [toLogFile] to AsyncAppender.
+18:26:25,887 |-INFO in ch.qos.logback.classic.AsyncAppender[toLogFileAsync] - Setting discardingThreshold to 0
+18:26:25,892 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+18:26:25,892 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [toLogFileAsync] to Logger[ROOT]
+18:26:25,892 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:26:25,893 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@d7b1517 - Registering current configuration as safe fallback point
+
+>>>>>>>>>>>>>>>>>>>>>>>>>> starting proxy server <<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>> available process: 7 <<<<<<<<<<<<<<<<<<<<<<
+
+CONNECT trouter-azsc-euno-0-b.trouter.skype.com:443 HTTP/1.1
+Host: trouter-azsc-euno-0-b.trouter.skype.com:443
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+CONNECT tch850096.tch.poe.com:443 HTTP/1.1
+Host: tch850096.tch.poe.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+CONNECT wp.mail.qq.com:443 HTTP/1.1
+Host: wp.mail.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT tch850096.tch.poe.com:443 HTTP/1.1
+Host: tch850096.tch.poe.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wp.mail.qq.com:443 HTTP/1.1
+Host: wp.mail.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT prod.registrar.skype.com:443 HTTP/1.1
+Host: prod.registrar.skype.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT ic3.events.data.microsoft.com:443 HTTP/1.1
+Host: ic3.events.data.microsoft.com:443
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT alive.github.com:443 HTTP/1.1
+Host: alive.github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT comet2.airdroid.com:6977 HTTP/1.1
+Host: comet2.airdroid.com:6977
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT push.airdroid.com:443 HTTP/1.1
+Host: push.airdroid.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT app.yinxiang.com:443 HTTP/1.1
+Host: app.yinxiang.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT juejin.cn:443 HTTP/1.1
+Host: juejin.cn:443
+CONNECT m.weibo.cn:443 HTTP/1.1
+Host: m.weibo.cn:443
+Proxy-Connection: keep-alive
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+
+CONNECT www.googleapis.com:443 HTTP/1.1
+Host: www.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT twitter.com:443 HTTP/1.1
+Host: twitter.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT m.youtube.com:443 HTTP/1.1
+Host: m.youtube.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT m.youtube.com:443 HTTP/1.1
+Host: m.youtube.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT www.youtube.com:443 HTTP/1.1
+Host: www.youtube.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT i.ytimg.com:443 HTTP/1.1
+Host: i.ytimg.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT googleads.g.doubleclick.net:443 HTTP/1.1
+Host: googleads.g.doubleclick.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT i.ytimg.com:443 HTTP/1.1
+Host: i.ytimg.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT googleads.g.doubleclick.net:443 HTTP/1.1
+Host: googleads.g.doubleclick.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT static.doubleclick.net:443 HTTP/1.1
+Host: static.doubleclick.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT yt3.ggpht.com:443 HTTP/1.1
+Host: yt3.ggpht.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT teams.events.data.microsoft.com:443 HTTP/1.1
+Host: teams.events.data.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67
+
+CONNECT gsp64-ssl.ls.apple.com:443 HTTP/1.1
+Host: gsp64-ssl.ls.apple.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+GET http://www.msftconnecttest.com/connecttest.txt?n=1690136840257 HTTP/1.1
+Host: www.msftconnecttest.com
+Proxy-Connection: keep-alive
+Accept: text/plain
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: text/plain
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT m.youtube.com:443 HTTP/1.1
+Host: m.youtube.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT api-cn1.mpay.samsung.com.cn:443 HTTP/1.1
+Host: api-cn1.mpay.samsung.com.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api-cn1.mpay.samsung.com.cn:443 HTTP/1.1
+Host: api-cn1.mpay.samsung.com.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ulogs.umeng.com:443 HTTP/1.1
+Host: ulogs.umeng.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api-cn1.mpay.samsung.com.cn:443 HTTP/1.1
+Host: api-cn1.mpay.samsung.com.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT cn-ms.galaxyappstore.com:443 HTTP/1.1
+Host: cn-ms.galaxyappstore.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api-cn1.mpay.samsung.com.cn:443 HTTP/1.1
+Host: api-cn1.mpay.samsung.com.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT sdk.pushmessage.samsung.com.cn:443 HTTP/1.1
+Host: sdk.pushmessage.samsung.com.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ulogs.umeng.com:443 HTTP/1.1
+Host: ulogs.umeng.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT chinaeast2-0.in.applicationinsights.azure.cn:443 HTTP/1.1
+Host: chinaeast2-0.in.applicationinsights.azure.cn
+Proxy-Connection: Keep-Alive
+
+CONNECT vas.samsungapps.com:443 HTTP/1.1
+Host: vas.samsungapps.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT update.googleapis.com:443 HTTP/1.1
+Host: update.googleapis.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT cn-auth2.samsungosp.com.cn:443 HTTP/1.1
+Host: cn-auth2.samsungosp.com.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT browser.pipe.aria.microsoft.com:443 HTTP/1.1
+Host: browser.pipe.aria.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT api.samsungconsent.cn:443 HTTP/1.1
+Host: api.samsungconsent.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api.samsungconsent.cn:443 HTTP/1.1
+Host: api.samsungconsent.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT play.google.com:443 HTTP/1.1
+Host: play.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT activity.mpay.samsung.com.cn:443 HTTP/1.1
+Host: activity.mpay.samsung.com.cn:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SM-G9600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36
+
+CONNECT api.samsungconsent.cn:443 HTTP/1.1
+Host: api.samsungconsent.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api.samsungconsent.cn:443 HTTP/1.1
+Host: api.samsungconsent.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ipv6.music.163.com:443 HTTP/1.1
+Host: ipv6.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT nstool.netease.com:443 HTTP/1.1
+Host: nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT ipv4.music.163.com:443 HTTP/1.1
+Host: ipv4.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT only-844946-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-844946-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT c-gtc.getui.net:443 HTTP/1.1
+Host: c-gtc.getui.net:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT crash.163.com:443 HTTP/1.1
+Host: crash.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT factor.reg.163.com:443 HTTP/1.1
+Host: factor.reg.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ipv6.music.163.com:443 HTTP/1.1
+Host: ipv6.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT ipv4.music.163.com:443 HTTP/1.1
+Host: ipv4.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT lbs.netease.im:443 HTTP/1.1
+Host: lbs.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT nstool.netease.com:443 HTTP/1.1
+Host: nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT ye.dun.163yun.com:443 HTTP/1.1
+Host: ye.dun.163yun.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT only-15659-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-15659-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://iadmusicmat.music.126.net/1979fbaf142b4439a5ea8af44ec6c8cb.jpg HTTP/1.1
+Host: iadmusicmat.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 1008
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT api.iplay.163.com:443 HTTP/1.1
+Host: api.iplay.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api2.music.163.com:443 HTTP/1.1
+Host: api2.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api2.music.163.com:443 HTTP/1.1
+Host: api2.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p6.music.126.net:443 HTTP/1.1
+Host: p6.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p6.music.126.net:443 HTTP/1.1
+Host: p6.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT only-546534-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-546534-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT p1.music.126.net:443 HTTP/1.1
+Host: p1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p5.music.126.net:443 HTTP/1.1
+Host: p5.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p1.music.126.net:443 HTTP/1.1
+Host: p1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p1.music.126.net:443 HTTP/1.1
+Host: p1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p6.music.126.net:443 HTTP/1.1
+Host: p6.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p5.music.126.net:443 HTTP/1.1
+Host: p5.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+GET http://iadmusicmat.music.126.net/6da4679c3e4e4ed0beb378108228c6e7.jpg?imageView=1&type=webp&quality=80 HTTP/1.1
+Host: iadmusicmat.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+Cache-Control: no-store
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+CONNECT p5.music.126.net:443 HTTP/1.1
+X-MAM-CustomMark: cronet
+Host: p5.music.126.net:443
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p6.music.126.net:443 HTTP/1.1
+Host: p6.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p5.music.126.net:443 HTTP/1.1
+Host: p5.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p5.music.126.net:443 HTTP/1.1
+Host: p5.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p2.music.126.net:443 HTTP/1.1
+Host: p2.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p2.music.126.net:443 HTTP/1.1
+Host: p2.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p2.music.126.net:443 HTTP/1.1
+Host: p2.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT netapm.music.163.com:443 HTTP/1.1
+Host: netapm.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT p5.music.126.net:443 HTTP/1.1
+Host: p5.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT only-147973-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-147973-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://iadmusicmatvideo.music.126.net/995a86788a7742868edbbdad5734bd6d.mp4 HTTP/1.1
+Host: iadmusicmatvideo.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+CONNECT b-gtc.gepush.com:443 HTTP/1.1
+Host: b-gtc.gepush.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT only-529006-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-529006-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT only-530711-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-530711-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmat.nosdn.127.net/bb7a7a38696f4671a437866121886ed1.zip HTTP/1.1
+Host: iadmat.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=425721856-425983999
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.208.1.1
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 1008
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=425984000-426246143
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.208.1.2
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=426246144-426405393
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.208.1.3
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+GET http://iadmat.nosdn.127.net/bb7a7a38696f4671a437866121886ed1.zip HTTP/1.1
+Host: iadmat.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+CONNECT ipv6.music.163.com:443 HTTP/1.1
+Host: ipv6.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT nstool.netease.com:443 HTTP/1.1
+Host: nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT ipv4.music.163.com:443 HTTP/1.1
+Host: ipv4.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT only-49666-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-49666-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+GET http://iadmatapk.nosdn.127.net/8252960efab040b8afd16e5925c75a73.zip HTTP/1.1
+Host: iadmatapk.nosdn.127.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+GET http://iadmusicmatvideo.music.126.net/995a86788a7742868edbbdad5734bd6d.mp4 HTTP/1.1
+Host: iadmusicmatvideo.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+CONNECT s1.music.126.net:443 HTTP/1.1
+Host: s1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SM-G9600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36
+
+GET http://connectivitycheck.gstatic.com/generate_204 HTTP/1.1
+Connection: close
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36
+Host: connectivitycheck.gstatic.com
+Accept-Encoding: gzip
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT dr.netease.im:443 HTTP/1.1
+Host: dr.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT api.twitter.com:443 HTTP/1.1
+Host: api.twitter.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT d1.music.126.net:443 HTTP/1.1
+Host: d1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT d1.music.126.net:443 HTTP/1.1
+Host: d1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT substrate.office.com:443 HTTP/1.0
+Host: substrate.office.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT server.events.data.microsoft.com:443 HTTP/1.0
+Host: server.events.data.microsoft.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT d4.music.126.net:443 HTTP/1.1
+Host: d4.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT osfsr.lenovomm.com:443 HTTP/1.1
+Host: osfsr.lenovomm.com:443
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: ldc.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT osfsr.lenovomm.com:443 HTTP/1.1
+Host: osfsr.lenovomm.com:443
+
+CONNECT uss.lenovomm.com:443 HTTP/1.0
+User-Agent: Ryeol HTTP Client Class
+Host: uss.lenovomm.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: ldc.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT dsp.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: dsp.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.1
+Host: ldc.lenovo.com.cn:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: ldc.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT cloud-rest.lenovomm.com:443 HTTP/1.1
+Host: cloud-rest.lenovomm.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+
+CONNECT dsp.lenovo.com.cn:443 HTTP/1.1
+Host: dsp.lenovo.com.cn:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.1
+Host: ldc.lenovo.com.cn:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: ldc.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT sdk-open-phone.getui.com:443 HTTP/1.1
+Host: sdk-open-phone.getui.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1
+Cache-Control: no-cache
+Connection: Close
+Pragma: no-cache
+User-Agent: Microsoft NCSI
+Host: www.msftconnecttest.com
+
+CONNECT ue.lenovomm.cn:443 HTTP/1.1
+Host: ue.lenovomm.cn:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+
+CONNECT mt.lenovo.com.cn:443 HTTP/1.1
+Host: mt.lenovo.com.cn:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36
+
+CONNECT pc-store.lenovomm.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: pc-store.lenovomm.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT pc-store.lenovomm.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: pc-store.lenovomm.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT googleads.g.doubleclick.net:443 HTTP/1.1
+Host: googleads.g.doubleclick.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G9600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/22.1 Chrome/111.0.5563.116 Mobile Safari/537.36
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT p2.music.126.net:443 HTTP/1.1
+Host: p2.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT pc-store.lenovomm.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: pc-store.lenovomm.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT interface3.music.163.com:443 HTTP/1.1
+Host: interface3.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT dr.netease.im:443 HTTP/1.1
+Host: dr.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: ldc.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT dsp.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: dsp.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT ldc.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: ldc.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT reg.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: reg.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT dsp.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: dsp.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT chinaeast2-0.in.applicationinsights.azure.cn:443 HTTP/1.1
+Host: chinaeast2-0.in.applicationinsights.azure.cn
+Proxy-Connection: Keep-Alive
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT clk.lenovo.com.cn:443 HTTP/1.0
+User-Agent: PC-WIN7
+Host: clk.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT d3.music.126.net:443 HTTP/1.1
+Host: d3.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT dr.netease.im:443 HTTP/1.1
+Host: dr.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT lbs.netease.im:443 HTTP/1.1
+Host: lbs.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 27
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT m701.music.126.net:443 HTTP/1.1
+Host: m701.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT www.bingapis.com:443 HTTP/1.1
+Host: www.bingapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+GET http://www.baidu.com/index.php?tn=se_chromebtn HTTP/1.1
+Host: www.baidu.com
+Proxy-Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+null
+Cookie: BIDUPSID=54B783AF522EA9BB1F92120A336A0BB5; PSTM=1624084025; BDUSS=lVYjZiMDlWR1Q1QzFrfnpHaDItZmRVSnQ5R1VZWlJEa254NUtzS2NrYk1GZVZqSVFBQUFBJCQAAAAAAAAAAAEAAADIC3VTX8TmX8uuX9DQX9bbXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMyIvWPMiL1jbW; BAIDU_WISE_UID=wapp_1677398730159_738; BD_HOME=1; ZD_ENTRY=bing; BD_CK_SAM=1; delPer=0; BAIDUID=4F50F54D4114B56F97FD633006B96338:FG=1; COOKIE_SESSION=6159264_0_6_3_24_4_0_1_6_4_0_0_2093258_0_0_0_1676468570_0_1683555070%7C9%230_0_1683555070%7C1; baikeVisitId=56eb8148-818b-4446-9bd2-ba8c5883436c; MCITY=-%3A; BDRCVFR[hyLLCYbpewf]=mk3SLVN4HKm; BDRCVFR[a7Hv7UWN6Ot]=-kY6jVJCv-DpykGIhR8mv3; amp_6e403e=xdZPwXek-sUjKCoWzZFeE2.Zmx5aW5nLmhpZ2hlci5qdkBnbWFpbC5jb20=..1h4f9thid.1h4f9thie.0.1f.1f; BDRCVFR[RBTe4tvL6q6]=K7PavkeTFPTUAN8ULuEQhPEUi4WU6; BD_UPN=12314753; PSINO=7; BA_HECTOR=84a42hah842125ah25240l0f1ibpmpm1o; sugstore=1; BDSVRTM=0
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT functional.events.data.microsoft.com:443 HTTP/1.1
+Host: functional.events.data.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT app.yinxiang.com:443 HTTP/1.1
+Host: app.yinxiang.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT gimg3.baidu.com:443 HTTP/1.1
+Host: gimg3.baidu.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT gimg3.baidu.com:443 HTTP/1.1
+Host: gimg3.baidu.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT gimg3.baidu.com:443 HTTP/1.1
+Host: gimg3.baidu.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT gimg3.baidu.com:443 HTTP/1.1
+Host: gimg3.baidu.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT gimg3.baidu.com:443 HTTP/1.1
+Host: gimg3.baidu.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+GET http://pss.bdstatic.com/r/www/cache/static/global/js/all_async_search_4f7a6f7.js HTTP/1.1
+Host: pss.bdstatic.com
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+Accept: */*
+Referer: http://www.baidu.com/index.php?tn=se_chromebtn
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+CONNECT edge.microsoft.com:443 HTTP/1.1
+Host: edge.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT login.wx.qq.com:443 HTTP/1.1
+Host: login.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 27
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://hectorstatic.baidu.com/cd37ed75a9387c5b.js HTTP/1.1
+Host: hectorstatic.baidu.com
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+Accept: */*
+Referer: http://www.baidu.com/index.php?tn=se_chromebtn
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+null
+Cookie: BIDUPSID=54B783AF522EA9BB1F92120A336A0BB5; PSTM=1624084025; BDUSS=lVYjZiMDlWR1Q1QzFrfnpHaDItZmRVSnQ5R1VZWlJEa254NUtzS2NrYk1GZVZqSVFBQUFBJCQAAAAAAAAAAAEAAADIC3VTX8TmX8uuX9DQX9bbXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMyIvWPMiL1jbW; BAIDU_WISE_UID=wapp_1677398730159_738; ZD_ENTRY=bing; delPer=0; BAIDUID=4F50F54D4114B56F97FD633006B96338:FG=1; MCITY=-%3A; BDRCVFR[hyLLCYbpewf]=mk3SLVN4HKm; BDRCVFR[a7Hv7UWN6Ot]=-kY6jVJCv-DpykGIhR8mv3; amp_6e403e=xdZPwXek-sUjKCoWzZFeE2.Zmx5aW5nLmhpZ2hlci5qdkBnbWFpbC5jb20=..1h4f9thid.1h4f9thie.0.1f.1f; BDRCVFR[RBTe4tvL6q6]=K7PavkeTFPTUAN8ULuEQhPEUi4WU6; PSINO=7; BA_HECTOR=84a42hah842125ah25240l0f1ibpmpm1o
+If-Modified-Since: Sat, 22 Jul 2023 09:32:02 GMT
+
+CONNECT login.wx.qq.com:443 HTTP/1.1
+Host: login.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT login.wx.qq.com:443 HTTP/1.1
+Host: login.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT login.weixin.qq.com:443 HTTP/1.1
+Host: login.weixin.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT login.weixin.qq.com:443 HTTP/1.1
+Host: login.weixin.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+GET http://connectivitycheck.gstatic.com/generate_204 HTTP/1.1
+Connection: close
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36
+Host: connectivitycheck.gstatic.com
+Accept-Encoding: gzip
+
+GET http://connectivitycheck.gstatic.com/generate_204 HTTP/1.1
+Connection: close
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36
+Host: connectivitycheck.gstatic.com
+Accept-Encoding: gzip
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 27
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT capi.samsungcloud.com:443 HTTP/1.1
+Host: capi.samsungcloud.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.10.0
+
+CONNECT capi.samsungcloud.com:443 HTTP/1.1
+Host: capi.samsungcloud.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.10.0
+
+CONNECT capi.samsungcloud.com:443 HTTP/1.1
+Host: capi.samsungcloud.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.2
+
+CONNECT dr.netease.im:443 HTTP/1.1
+Host: dr.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT capi.samsungcloud.com:443 HTTP/1.1
+Host: capi.samsungcloud.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.2
+
+CONNECT sdkapiv2.bizport.cn:443 HTTP/1.1
+Host: sdkapiv2.bizport.cn:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ossgw.alicdn.com:443 HTTP/1.1
+Host: ossgw.alicdn.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 27
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+GET http://www.msftconnecttest.com/connecttest.txt?n=1690137034074 HTTP/1.1
+Host: www.msftconnecttest.com
+Proxy-Connection: keep-alive
+Accept: text/plain
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: text/plain
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 27
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT webpush.wx.qq.com:443 HTTP/1.1
+Host: webpush.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT mail.qq.com:443 HTTP/1.1
+Host: mail.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.mail.qq.com:443 HTTP/1.1
+Host: wx.mail.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT js.aq.qq.com:443 HTTP/1.1
+Host: js.aq.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+GET http://d1.music.126.net/dmusic/obj/w5zCg8OAw6HDjzjDgMK_/15063849120/83f4/65ab/7b6c/7615d87e186d913815eb16d5897d9802.zip HTTP/1.1
+Host: d1.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+POST http://httpdns.music.163.com/httpdns/v2/d HTTP/1.1
+Host: httpdns.music.163.com
+Proxy-Connection: keep-alive
+Content-Length: 27
+Accept-Encoding: gzip
+netease-app: 3a365afeca794aef9224980f562d2231
+X-SESSION-ID: 0183b9a3-ec1e-4a8d-a26f-77b7f2a661db
+timestamp: 1690070400000
+X-SDK-VERSION: android.1.4.0-1.4.0.0
+netease-sign: 9d7962fcae99ecd83904e1f675ecebb0
+X-OS-TYPE: android
+Content-Type: application/json
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT browser.pipe.aria.microsoft.com:443 HTTP/1.1
+Host: browser.pipe.aria.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT dr.netease.im:443 HTTP/1.1
+Host: dr.netease.im:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ipv6.music.163.com:443 HTTP/1.1
+Host: ipv6.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT nstool.netease.com:443 HTTP/1.1
+Host: nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT ipv4.music.163.com:443 HTTP/1.1
+Host: ipv4.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+GET http://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_8.10.32.230721150815_64.apk HTTP/1.1
+Host: d1.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+CONNECT only-201811-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-201811-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT p1.music.126.net:443 HTTP/1.1
+Host: p1.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT www.google.com:443 HTTP/1.1
+Host: www.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT fonts.gstatic.com:443 HTTP/1.1
+Host: fonts.gstatic.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT www.gstatic.com:443 HTTP/1.1
+Host: www.gstatic.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT www.google.com:443 HTTP/1.1
+Host: www.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT pan.baidu.com:443 HTTP/1.1
+Host: pan.baidu.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT api.lab.amplitude.com:443 HTTP/1.1
+Host: api.lab.amplitude.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT support.weixin.qq.com:443 HTTP/1.1
+Host: support.weixin.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT ipv6.music.163.com:443 HTTP/1.1
+Host: ipv6.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT nstool.netease.com:443 HTTP/1.1
+Host: nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT ipv4.music.163.com:443 HTTP/1.1
+Host: ipv4.music.163.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT cm.sereng.miniclippt.com:443 HTTP/1.1
+Host: cm.sereng.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT stackoverflow.com:443 HTTP/1.1
+Host: stackoverflow.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT s7.music.126.net:443 HTTP/1.1
+Host: s7.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SM-G9600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36
+
+CONNECT s7.music.126.net:443 HTTP/1.1
+Host: s7.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; SM-G9600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36
+
+CONNECT tch850096.tch.poe.com:443 HTTP/1.1
+Host: tch850096.tch.poe.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT login.wx.qq.com:443 HTTP/1.1
+Host: login.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT cdn.sstatic.net:443 HTTP/1.1
+Host: cdn.sstatic.net:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT ajax.googleapis.com:443 HTTP/1.1
+Host: ajax.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT only-347412-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-347412-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+CONNECT www.gravatar.com:443 HTTP/1.1
+Host: www.gravatar.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT i.stack.imgur.com:443 HTTP/1.1
+Host: i.stack.imgur.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT www.gravatar.com:443 HTTP/1.1
+Host: www.gravatar.com:443
+Proxy-Connection: keep-alive
+CONNECT www.gravatar.com:443 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+Host: www.gravatar.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT m801.music.126.net:443 HTTP/1.1
+Host: m801.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT only-347412-89-19-88-96.nstool.netease.com:443 HTTP/1.1
+Host: only-347412-89-19-88-96.nstool.netease.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://m801.music.126.net/20230724025608/8f1b252387bdc5ca402060aa7e87ec0b/jdyyaac/035c/010c/0308/464ca447c66ffcbb6c8c4b9157992e02.m4a HTTP/1.1
+Host: m801.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-12978469
+
+CONNECT edge.microsoft.com:443 HTTP/1.1
+Host: edge.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT www.googletagmanager.com:443 HTTP/1.1
+Host: www.googletagmanager.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT edge.microsoft.com:443 HTTP/1.1
+Host: edge.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT people.skype.com:443 HTTP/1.1
+Host: people.skype.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT legionzone.lenovo.com:443 HTTP/1.0
+User-Agent: LZSpeeding
+Host: legionzone.lenovo.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT edge.microsoft.com:443 HTTP/1.1
+Host: edge.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT azeus1-client-s.gateway.messenger.live.com:443 HTTP/1.1
+Host: azeus1-client-s.gateway.messenger.live.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT lzupdate.lenovo.com.cn:443 HTTP/1.0
+User-Agent: LZUpdate
+Host: lzupdate.lenovo.com.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT teams.events.data.microsoft.com:443 HTTP/1.0
+Host: teams.events.data.microsoft.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT legionzone.lenovo.com:443 HTTP/1.0
+User-Agent: LZUpdate
+Host: legionzone.lenovo.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT cloud-rest.lenovomm.com:443 HTTP/1.0
+User-Agent: LZSpeeding
+Host: cloud-rest.lenovomm.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+CONNECT accounts.google.com:443 HTTP/1.1
+Host: accounts.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT ogs.google.com:443 HTTP/1.1
+Host: ogs.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT region1.google-analytics.com:443 HTTP/1.1
+Host: region1.google-analytics.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT ssl.gstatic.com:443 HTTP/1.1
+Host: ssl.gstatic.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT d3.music.126.net:443 HTTP/1.1
+Host: d3.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=425721856-425983999
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.209.1.1
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=425984000-426246143
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.209.1.2
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=426246144-426405393
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.209.1.3
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+CONNECT webpush.wx.qq.com:443 HTTP/1.1
+Host: webpush.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT teams.events.data.microsoft.com:443 HTTP/1.1
+Host: teams.events.data.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67
+
+CONNECT wx.qq.com:443 HTTP/1.1
+Host: wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT webpush.wx.qq.com:443 HTTP/1.1
+Host: webpush.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT ossgw.alicdn.com:443 HTTP/1.1
+Host: ossgw.alicdn.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT a1.alibabausercontent.com:443 HTTP/1.1
+Host: a1.alibabausercontent.com:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT webpush.wx.qq.com:443 HTTP/1.1
+Host: webpush.wx.qq.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT play.google.com:443 HTTP/1.1
+Host: play.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+GET http://iadmusicmatvideo.music.126.net/9e441a21338a4bcdbb51a879415a59ee.mp4 HTTP/1.1
+Host: iadmusicmatvideo.music.126.net
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+CMPageId: MainActivity
+MConfig-Info: {"IuRPVVmc3WWul9fT":{"version":"19136512","appver":"8.10.21"},"tPJJnts2H31BZXmp":{"version":"2068480","appver":"4.14.0"},"BWMcZ9OJMNzOU5M3":{"version":"135168","appver":"2.4.0"},"c0Ve6C0uNl2Am0Rl":{"version":"270336","appver":"1.4.30"},"zr4bw6pKFDIZScpo":{"version":"708608","appver":"1.22.1"}}
+X-MAM-CustomMark: cronet
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Range: bytes=0-
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT m801.music.126.net:443 HTTP/1.1
+Host: m801.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT edge.skype.com:443 HTTP/1.1
+Host: edge.skype.com:443
+
+CONNECT chinaeast2-0.in.applicationinsights.azure.cn:443 HTTP/1.1
+Host: chinaeast2-0.in.applicationinsights.azure.cn
+Proxy-Connection: Keep-Alive
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT array613.prod.do.dsp.mp.microsoft.com:443 HTTP/1.1
+Host: array613.prod.do.dsp.mp.microsoft.com:443
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1
+Cache-Control: no-cache
+Connection: Close
+Pragma: no-cache
+User-Agent: Microsoft NCSI
+Host: www.msftconnecttest.com
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT app.yinxiang.com:443 HTTP/1.1
+Host: app.yinxiang.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT github.githubassets.com:443 HTTP/1.1
+Host: github.githubassets.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT github.githubassets.com:443 HTTP/1.1
+Host: github.githubassets.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT avatars.githubusercontent.com:443 HTTP/1.1
+Host: avatars.githubusercontent.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT api.github.com:443 HTTP/1.1
+Host: api.github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT collector.github.com:443 HTTP/1.1
+Host: collector.github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT docs.github.com:443 HTTP/1.1
+Host: docs.github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT docs.github.com:443 HTTP/1.1
+Host: docs.github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT nav-edge.smartscreen.microsoft.com:443 HTTP/1.1
+Host: nav-edge.smartscreen.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT edge.microsoft.com:443 HTTP/1.1
+Host: edge.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT docs.github.com:443 HTTP/1.1
+Host: docs.github.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1
+Cache-Control: no-cache
+Connection: Close
+Pragma: no-cache
+User-Agent: Microsoft NCSI
+Host: www.msftconnecttest.com
+
+GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1
+Cache-Control: no-cache
+Connection: Close
+Pragma: no-cache
+User-Agent: Microsoft NCSI
+Host: www.msftconnecttest.com
+
+CONNECT edge.microsoft.com:443 HTTP/1.1
+Host: edge.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT push.airdroid.com:443 HTTP/1.1
+Host: push.airdroid.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/4.9.1
+
+CONNECT newsfeed.miniclippt.com:443 HTTP/1.1
+Host: newsfeed.miniclippt.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT d4.music.126.net:443 HTTP/1.1
+Host: d4.music.126.net:443
+Proxy-Connection: keep-alive
+User-Agent: NeteaseMusic/8.10.21.230630190933(8010021);Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT region1.app-measurement.com:443 HTTP/1.1
+Host: region1.app-measurement.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT events.split.io:443 HTTP/1.1
+Host: events.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT bag.itunes.apple.com:443 HTTP/1.1
+Host: bag.itunes.apple.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+GET http://ocsp.r2m02.amazontrust.com/ME8wTTBLMEkwRzAHBgUrDgMCGgQUZm0LcJyJ5L5L6%2BwTRUfktpU2D4wEFMAxUs1aUMOCfHRxzsvpnPl664LiAhALnc36tcmIepV9jwhMfkAH HTTP/1.1
+Host: ocsp.r2m02.amazontrust.com
+X-Apple-Request-UUID: 89BA6B92-B63D-4D1E-B8DA-6AC13F80DD3C
+Proxy-Connection: keep-alive
+Accept: */*
+User-Agent: com.apple.trustd/3.0
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+CONNECT sentry.io:443 HTTP/1.1
+Host: sentry.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT api.mixpanel.com:443 HTTP/1.1
+Host: api.mixpanel.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT auth.split.io:443 HTTP/1.1
+Host: auth.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT firebaselogging-pa.googleapis.com:443 HTTP/1.1
+Host: firebaselogging-pa.googleapis.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+GET http://ocsp.digicert.com/ME8wTTBLMEkwRzAHBgUrDgMCGgQUmPkAMqnAZes8T6hRDkyNuKcQFgMEFKW01us2xOdrpt%2FEZAsBKiAEuGYjAhAPxW%2BIOOOE64QZvdpYPvDP HTTP/1.1
+Host: ocsp.digicert.com
+X-Apple-Request-UUID: 19460C62-EE9A-42E7-8E75-8FCDDDDDCA4B
+Proxy-Connection: keep-alive
+Accept: */*
+User-Agent: com.apple.trustd/3.0
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET http://ocsp.digicert.com/ME8wTTBLMEkwRzAHBgUrDgMCGgQUgFEGATKtmsJ9UYeg6If7AWIBVe4EFAPeUDVW0Uy7ZvCj4hsbw5eyPdFVAhAPYi9vIcL%2FXVIfcjodR9Yt HTTP/1.1
+Host: ocsp.digicert.com
+X-Apple-Request-UUID: EFE52AA6-C48F-4CBB-AB06-A7D04A5258D5
+Proxy-Connection: keep-alive
+Accept: */*
+User-Agent: com.apple.trustd/3.0
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+CONNECT events.split.io:443 HTTP/1.1
+Host: events.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT events.split.io:443 HTTP/1.1
+Host: events.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT streaming.split.io:443 HTTP/1.1
+Host: streaming.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT sdk.split.io:443 HTTP/1.1
+Host: sdk.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT netapm.music.163.com:443 HTTP/1.1
+Host: netapm.music.163.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.netease.cloudmusic/8010021 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/72.0.3626.122)
+
+GET http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a69effc5-e7f9-45c0-b4e9-fc47942146d0?P1=1689806567&P2=404&P3=2&P4=DvPiEJWHED0UUcDrx5sRHUZbIkY9AFZnkPHSmmUxeAGJrPSmlTfCLtluiUZ564s5F%2bE3hnmkcGIGYvvf0L8NNA%3d%3d HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+Range: bytes=425721856-426405393
+User-Agent: Microsoft-Delivery-Optimization/10.1
+MS-CV: zm21lz6AokyvhpeZ.6.7.4.3.1.0.0.7.1.1.316.210.1.1
+Content-Length: 0
+Host: tlu.dl.delivery.mp.microsoft.com
+
+CONNECT edge.skype.com:443 HTTP/1.1
+Host: edge.skype.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.99.0.403 Chrome/102.0.5005.167 Electron/19.1.8 Safari/537.36
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT tch850096.tch.poe.com:443 HTTP/1.1
+Host: tch850096.tch.poe.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT firebaselogging-pa.googleapis.com:443 HTTP/1.1
+Host: firebaselogging-pa.googleapis.com
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT www.google.com:443 HTTP/1.1
+Host: www.google.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT www.googleapis.com:443 HTTP/1.1
+Host: www.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1
+Cache-Control: no-cache
+Connection: Close
+Pragma: no-cache
+User-Agent: Microsoft NCSI
+Host: www.msftconnecttest.com
+
+GET http://tools.3g.qq.com/cw.html HTTP/1.1
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+Host: tools.3g.qq.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+POST http://mazu.3g.qq.com/ HTTP/1.1
+Pragma: no-cache
+Cache-Control: no-cache
+Accept: */*
+Accept-Charset: utf-8
+Content-Type: application/octet-stream
+Content-length: 306
+Connection: close
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+Host: mazu.3g.qq.com
+Accept-Encoding: gzip
+
+CONNECT v20.events.data.microsoft.com:443 HTTP/1.1
+Host: v20.events.data.microsoft.com:443
+
+CONNECT events.split.io:443 HTTP/1.1
+Host: events.split.io
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT teams.events.data.microsoft.com:443 HTTP/1.1
+Host: teams.events.data.microsoft.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67
+
+CONNECT weixin.qq.com:443 HTTP/1.1
+Host: weixin.qq.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT www.google.com:443 HTTP/1.1
+Host: www.google.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT v10.events.data.microsoft.com:443 HTTP/1.1
+Host: v10.events.data.microsoft.com:443
+
+GET http://connectivitycheck.gstatic.com/generate_204 HTTP/1.1
+Connection: close
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36
+Host: connectivitycheck.gstatic.com
+Accept-Encoding: gzip
+
+CONNECT mon.zijieapi.com:443 HTTP/1.1
+Host: mon.zijieapi.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.165
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+
+CONNECT play-fe.googleapis.com:443 HTTP/1.1
+Host: play-fe.googleapis.com:443
+Proxy-Connection: keep-alive
+User-Agent: com.android.vending/82172300 (Linux; U; Android 10; en_GB; SM-G9600; Build/QP1A.190711.020; Cronet/86.0.4240.7)
+
+CONNECT connectivitycheck.gstatic.com:443 HTTP/1.1
+Host: connectivitycheck.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; SM-G9600 Build/QP1A.190711.020)
+

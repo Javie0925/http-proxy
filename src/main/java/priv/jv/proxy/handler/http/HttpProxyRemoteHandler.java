@@ -1,4 +1,4 @@
-package priv.jv.httpproxy.proxy.handler;
+package priv.jv.proxy.handler.http;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;

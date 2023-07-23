@@ -41,9 +41,8 @@
         <appender-ref ref="toLogFile"/>
     </appender>
 
-    <root level="DEBUG">
-        <appender-ref ref="consoleAppender"/>
-        <appender-ref ref="toLogFile"/>
+    <root level="INFO">
+        <appender-ref ref="toLogFileAsync"/>
     </root>
 
 </configuration>

@@ -1,4 +1,4 @@
-package priv.jv.httpproxy.proxy.handler.bean;
+package priv.jv.proxy.handler.bean;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
