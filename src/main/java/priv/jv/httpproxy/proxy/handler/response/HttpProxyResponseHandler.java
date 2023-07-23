@@ -1,4 +1,4 @@
-package priv.jv.httpproxy.handler.response;
+package priv.jv.httpproxy.proxy.handler.response;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

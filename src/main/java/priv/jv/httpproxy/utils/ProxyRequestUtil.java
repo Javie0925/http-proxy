@@ -3,10 +3,10 @@ package priv.jv.httpproxy.utils;
 import io.netty.channel.Channel;
 import io.netty.handler.codec.http.HttpRequest;
 import io.netty.util.Attribute;
-import priv.jv.httpproxy.bean.ClientRequest;
-import priv.jv.httpproxy.bean.Constans;
+import priv.jv.httpproxy.proxy.handler.bean.ClientRequest;
+import priv.jv.httpproxy.Constans;
 
-import static priv.jv.httpproxy.bean.Constans.CLIENTREQUEST_ATTRIBUTE_KEY;
+import static priv.jv.httpproxy.Constans.CLIENTREQUEST_ATTRIBUTE_KEY;
 
 
 /**
