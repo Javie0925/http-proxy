@@ -1,0 +1,8 @@
+netty:
+  port: 9009
+  routes:
+    - id: starbucks
+      host: 192.168.137.142
+      port: 9876
+      match_hosts:
+

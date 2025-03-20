@@ -10,8 +10,10 @@
         <module name="http-proxy" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="http-proxy" target="8" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="http-proxy" options="-parameters" />
+    </option>
   </component>
 </project>

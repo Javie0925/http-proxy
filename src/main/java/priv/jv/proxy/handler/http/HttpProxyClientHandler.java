@@ -5,15 +5,17 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.handler.codec.socksx.SocksVersion;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import priv.jv.proxy.handler.bean.HttpProxyClientHeader;
+import priv.jv.proxy.utils.RouteUtil;
 
 /**
  * 代理客户端去请求目标主机
  */
+@Slf4j
 public class HttpProxyClientHandler extends ChannelInboundHandlerAdapter {
-    private static Logger logger = LoggerFactory.getLogger(HttpProxyRemoteHandler.class);
     /*代理服务端channel*/
     private Channel clientChannel;
     /*目标主机channel*/
@@ -76,11 +78,15 @@ public class HttpProxyClientHandler extends ChannelInboundHandlerAdapter {
          *
          * 下面为真实客户端第一次来到的时候，代理客户端向目标客户端发起连接
          */
+
         Bootstrap b = new Bootstrap();
         b.group(clientChannel.eventLoop()) // use the same EventLoop
                 .channel(clientChannel.getClass())
                 .handler(new HttpProxyRemoteHandler(clientChannel));
-        ChannelFuture f = b.connect(header.getHost(), header.getPort());
+        String targetHost = RouteUtil.routeHost(header.getHost());
+        int targetPort = RouteUtil.routePort(header.getHost(), header.getPort());
+        ChannelFuture f = b.connect(targetHost, targetPort);
+        log.info("{}:{} ---> {}:{}", header.getHost(), header.getPort(), targetHost, targetPort);
         remoteChannel = f.channel();
         f.addListener((ChannelFutureListener) future -> {
             if (future.isSuccess()) {
@@ -88,7 +94,7 @@ public class HttpProxyClientHandler extends ChannelInboundHandlerAdapter {
                 clientChannel.config().setAutoRead(true);
                 // forward header and remaining bytes
                 if (!header.isHttps()) {
-                    //in读取一次缓冲区就没有了，header.byteBuf里面存了一份
+                    // in读取一次缓冲区就没有了，header.byteBuf里面存了一份
                     remoteChannel.writeAndFlush(header.getByteBuf());
                 }
             } else {
@@ -106,7 +112,7 @@ public class HttpProxyClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable e) {
-        logger.error(e.toString(), e);
+        log.error(e.toString(), e);
         flushAndClose(clientChannel);
     }
 
